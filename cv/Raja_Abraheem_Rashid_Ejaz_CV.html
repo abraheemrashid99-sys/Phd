@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Raja Abraheem Rashid Ejaz – Curriculum Vitae</title>
+<style>
+  @page { size: A4; margin: 13mm 15mm 14mm 15mm; }
+  :root { --ink:#111; --muted:#444; --rule:#222; --link:#0b3d91; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; }
+  body { font-family: "Caladea","Liberation Serif",Georgia,serif; font-size:9.85pt; line-height:1.26; color:var(--ink); }
+  a { color:var(--ink); text-decoration:none; }
+  header { text-align:center; margin-bottom:6pt; }
+  header h1 { font-size:18pt; letter-spacing:0.6pt; margin:0 0 2pt 0; font-weight:700; text-transform:uppercase; }
+  header .tag { font-size:10.3pt; margin:0 0 2pt 0; }
+  header .contact { font-size:9.3pt; color:var(--muted); }
+  header .contact { display:flex; flex-wrap:wrap; justify-content:center; gap:0 4pt; } header .contact span { white-space:nowrap; } header .contact span + span::before { content:"·\00a0\00a0"; color:#888; }
+  h2 { font-size:10.2pt; text-transform:uppercase; letter-spacing:1.1pt; margin:7.5pt 0 3pt 0; padding-bottom:1.5pt; border-bottom:0.8pt solid var(--rule); font-weight:700; break-after:avoid; }
+  p { margin:0 0 3pt 0; }
+  .row { display:flex; justify-content:space-between; align-items:baseline; gap:8pt; margin-top:3.5pt; break-after:avoid; }
+  .row .l { font-weight:700; }
+  .row .r { white-space:nowrap; color:var(--muted); font-size:9.8pt; }
+  .sub { display:flex; justify-content:space-between; gap:8pt; font-style:italic; color:var(--muted); font-size:9.9pt; }
+  ul { margin:1.5pt 0 2pt 0; padding-left:13pt; }
+  li { margin:0 0 1.4pt 0; padding-left:1pt; }
+  ul.tight li { margin-bottom:0.8pt; }
+  .pub { display:grid; grid-template-columns:28pt 1fr; column-gap:4pt; margin:0 0 2pt 0; break-inside:avoid; }
+  .pub .k { color:var(--muted); }
+  .pub b { font-weight:700; }
+  .grp { font-weight:700; font-style:italic; margin:4pt 0 2pt 0; break-after:avoid; }
+  .note { font-size:9.4pt; color:var(--muted); margin-bottom:3pt; }
+  .kv { display:grid; grid-template-columns:118pt 1fr; row-gap:1.6pt; column-gap:6pt; }
+  .kv .k { font-weight:700; }
+  .refs { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8pt; margin-top:2pt; } .refs b { display:inline; } .refs b::after { content:", "; font-weight:400; }
+  .refs div { font-size:9.8pt; line-height:1.28; }
+  .refs b { display:block; }
+  .interests { margin-top:2.5pt; }
+  .rec { margin-top:1.5pt; }
+  .small { font-size:9.6pt; }
+  .pb { break-before:page; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Raja Abraheem Rashid Ejaz</h1>
+  <div class="tag">MSc Artificial Intelligence, Brunel University of London &nbsp;·&nbsp; Applicant for doctoral study in Artificial Intelligence</div>
+  <div class="contact">
+    <span>London, United Kingdom</span><span>+44&nbsp;7459&nbsp;625289</span><span><a href="mailto:abraheemrashid@outlook.com">abraheemrashid@outlook.com</a></span><span><a href="https://abraheemrashid.com">abraheemrashid.com</a></span><span><a href="https://github.com/Abraheem13">github.com/Abraheem13</a></span><span><a href="https://scholar.google.com/citations?user=Q86zgBgAAAAJ">Google Scholar</a></span>
+  </div>
+</header>
+
+<h2>Research Profile</h2>
+<p>I study how learning systems should behave when the world they run in does not hold still. My main line of work is <b>nested, multi-timescale learning</b>: letting different parts of a model update at different rates, which I have developed for federated learning, multi-agent reinforcement learning in 6G networks and adaptive-fidelity inference. A second line concerns <b>language-model agents</b>: when a reasoning model should stop thinking, how cheap guards can supervise scoped agents, and how agentic interfaces move risk rather than remove it. Across both I value results that survive honest testing, including negative ones: my MSc dissertation shows that no published early-exit halting signal generalises across domains, and explains why. I want to do open-ended, conceptually ambitious AI research in a collaborative group, drawing on applied work in wireless networks, healthcare, power systems and security.</p>
+<p class="interests"><b>Interests:</b> multi-timescale and nested learning · LLM agents and reasoning · multi-agent reinforcement learning · federated and privacy-preserving learning · trustworthy, reproducible machine learning.</p>
+<p class="rec"><b>Record:</b> 14 peer-reviewed papers published or accepted (2 journal, 12 conference; 8 as first author) · 10 under review · Best Paper Award, ICSL-DSGA 2026 · 3 co-supervised undergraduate projects produced accepted papers.</p>
+
+<h2>Education</h2>
+<div class="row"><span class="l">MSc Artificial Intelligence, Brunel University of London</span><span class="r">2024 – 2026</span></div>
+<div class="sub"><span>On track for Distinction. Supervisor: Prof. Yongmin Li.</span><span>London, UK</span></div>
+<ul>
+  <li><b>Dissertation:</b> <i>Knowing When to Stop Thinking: Risk-Controlled Early Exit for Reasoning Language Models.</i> Code: <a href="https://github.com/Abraheem13/TokenGuard">github.com/Abraheem13/TokenGuard</a>.</li>
+  <li>Compared five published halting signals and a confidence control on one shared probe stream across 12 benchmark and model settings (858 questions, 6,068 reasoning traces, 54,812 graded answers), judging every rule by its worst case on a held-out split.</li>
+  <li>Showed that no fixed signal generalises (answer agreement gains 8.3 points on GSM8K with Qwen3-8B but loses 23.5 on AIME-2024 with Qwen3-4B) and traced the failure to <i>error stickiness</i>, which rises from 0.13 to 0.77 as the answer space shrinks; two tests designed after the model was formulated confirmed it.</li>
+  <li>Proposed a Nested Token-Budget Controller whose fusion tier cuts worst-case regret to 0.031, against 0.100 for the best fixed signal, at 0.9 to 7.1% probing overhead.</li>
+  <li>Modules: Advanced Deep Learning, Statistical Learning Theory, Convex Optimization, Information Theory.</li>
+</ul>
+<div class="row"><span class="l">BEng Electrical Engineering (AI specialisation), COMSATS University Islamabad</span><span class="r">2020 – 2024</span></div>
+<div class="sub"><span>Islamabad, Pakistan. Final-year research project, funded by NESCOM: intelligent reconfigurable surfaces for UAV communication links.</span></div>
+
+<h2>Publications</h2>
+<p class="note">Published as R. A. R. Ejaz or A. Rashid (own name in bold). † corresponding author. Status as of October 2026.</p>
+
+<div class="grp">Journal articles</div>
+<div class="pub"><span class="k">[J1]</span><span><b>A. Rashid</b>, F. Iradat, W. Iqbal, I. Syed, K. Khan, and K. Yahya. “Nested Multi-Agent Reinforcement Learning for Adaptive Resource Management in 6G Network Slicing: A Multi-Timescale Framework with Convergence Guarantees.” <i>IEEE Open Journal of the Communications Society</i>, vol. 7, pp. 7624–7640, 2026. doi:10.1109/OJCOMS.2026.3708409</span></div>
+<div class="pub"><span class="k">[J2]</span><span><b>R. A. R. Ejaz</b>, F. Iradat, W. Iqbal, and A. Ahmad. “Nested Learning with Attention-Guided Multi-Frequency Supervision for Hepatic Vessel Segmentation.” <i>Neural Computing and Applications</i> (Springer). Accepted, 2026.</span></div>
+
+<div class="grp">Conference papers (published or accepted)</div>
+<div class="pub"><span class="k">[C1]</span><span><b>R. A. R. Ejaz</b>, Y. A. Bangash, F. Iradat, M. M. W. Iqbal, and S. V. Easwaramoorthy. “Hierarchical Bayesian Nested Optimisation for Uncertainty-Aware Resource Allocation in 6G Open-RAN.” <i>Int. Conf. on Statistical Learning, Data Science and Generative AI (ICSL-DSGA 2026)</i>, Sunway University, Malaysia. <b>Best Paper Award.</b></span></div>
+<div class="pub"><span class="k">[C2]</span><span>S. S. H. Hajjaj, <b>A. Rashid</b>, and S. V. Easwaramoorthy. “STREAM-HGAT: Mining Spatiotemporal Patterns and Anomalies in Smart-Grid Telemetry Streams with a Hybrid Graph-Attention Framework.” <i>44th IEEE International Conference on Computer Design (ICCD 2026)</i>, Hong Kong.</span></div>
+<div class="pub"><span class="k">[C3]</span><span>S. V. Easwaramoorthy and <b>A. Rashid</b>. “HEAL-GTN: Mining Longitudinal Electronic Health Records with a Hierarchical Graph-Temporal Network for Early Sepsis and Acute Kidney Injury Prediction.” <i>44th IEEE International Conference on Computer Design (ICCD 2026)</i>, Hong Kong.</span></div>
+<div class="pub"><span class="k">[C4]</span><span>J. I. Thirupattur, S. V. Easwaramoorthy, A. Khalid, and <b>A. Rashid</b>. “MedFlow: A Drift-Adaptive Streaming Analytics Framework for Real-Time Medical Risk Prediction across Five Public Health Datasets.” <i>44th IEEE International Conference on Computer Design (ICCD 2026)</i>, Hong Kong.</span></div>
+<div class="pub"><span class="k">[C5]</span><span><b>R. A. R. Ejaz</b>†, F. Iradat, U. Taslim, Y. A. Bangash†, W. Iqbal, and M. B. K. Raja. “Nested Federated Learning: Layer-Wise Multi-Frequency Synchronisation for Privacy-Preserving Distributed Intelligence.” <i>FAIEMA 2026</i> (Springer).</span></div>
+<div class="pub"><span class="k">[C6]</span><span><b>R. A. R. Ejaz</b>†, F. Iradat, et al. “DP-f-FUM: Differentially Private Federated Unlearning via Per-Sample Clipping and Min–Max f-Divergence Optimisation.” <i>FLTA 2026</i>, main track.</span></div>
+<div class="pub"><span class="k">[C7]</span><span><b>R. A. R. Ejaz</b>, F. Iradat, and M. Kumail. “A Multi-Timescale Safety Architecture for Developmentally Adaptive Child–AI Interaction via Nested Policy Learning.” <i>UK Workshop on Computational Intelligence (UKCI 2026)</i>, Coventry, UK.</span></div>
+<div class="pub"><span class="k">[C8]</span><span><b>R. A. R. Ejaz</b>†, Q. M. Waiz, and F. Iradat. “HADES: Hierarchical Autonomous Digital Evidence System Using Skill-Driven Multi-Agent Orchestration for Digital Forensics.” <i>IEEE/WIC Int. Conf. on Web Intelligence and Intelligent Agent Technology (WI-IAT 2026)</i>, Linz, Austria.</span></div>
+<div class="pub"><span class="k">[C9]</span><span><b>R. A. R. Ejaz</b> and F. Iradat. “Training-Free Coarse Point Cloud Registration via Axis-Projected Surface Area Matching.” <i>ICCVDM 2026</i>.</span></div>
+<div class="pub"><span class="k">[C10]</span><span>A. M. Warris, Z. U. Ebad, <b>R. A. R. Ejaz</b>, and F. Iradat. “FedSRIMU: Spectral Roughness-Informed Federated Unlearning for Privacy-Compliant IoT Intrusion Detection.” <i>UKCI 2026</i>, Coventry, UK.</span></div>
+<div class="pub"><span class="k">[C11]</span><span>A. Khan, A. Ahmedani, A. A. Kiani, F. Iradat, <b>R. A. R. Ejaz</b>, and Y. A. Bangash. “TEMPEST: Temporal Execution Modeling for Pre-Encryption Ransomware Detection with Timestep-Level Explainability.” <i>ICSL-DSGA 2026</i>, Sunway University, Malaysia.</span></div>
+<div class="pub"><span class="k">[C12]</span><span>E. Tariq, E. Tariq, I. S. Khan, <b>R. A. R. Ejaz</b>, and F. Iradat. “From AI to Generative AI: How Emerging Technologies Are Reshaping Public Trust.” <i>WI-IAT 2026</i>, Linz, Austria.</span></div>
+
+<div class="grp">Under review</div>
+<div class="pub"><span class="k">[R1]</span><span><b>R. A. R. Ejaz</b>, et al. “FrugalGuard: Cost-Aware Adaptive Escalation for Guarding Scoped Large Language Model Agents.” <i>Array</i> (Elsevier).</span></div>
+<div class="pub"><span class="k">[R2]</span><span><b>A. Rashid</b>, F. Iradat, W. Iqbal, F. A. Khan, and A. Ahmad. “From Assumption to Invariant: Supervisory Control for Byzantine-Robust Federated Learning on Mobile Devices.” <i>IEEE Transactions on Mobile Computing</i>.</span></div>
+<div class="pub"><span class="k">[R3]</span><span><b>A. Rashid</b>, F. Iradat, W. Iqbal†, B. Metin, and M. Mansouri. “LLM Intrusion Detection Agents Relocate the Privacy Exposure That Device-Layer Traffic Shaping Removes in Smart Home IoT Networks.” <i>Discover Computing</i> (Springer).</span></div>
+<div class="pub"><span class="k">[R4]</span><span><b>A. Rashid</b>, F. Iradat, and W. Iqbal†. “Molecular Prompt Injection: Hijacking Agentic Bio-Cyber Interfaces and a Nested Multi-Timescale Trust Monitor for the Internet of Bio-Nano Things.” <i>Cognitive Computation</i> (Springer).</span></div>
+<div class="pub"><span class="k">[R5]</span><span><b>R. A. R. Ejaz</b>, et al. “Descriptor-Space Transfer of Path-Loss Parameters in 6G Digital Twins: Degeneracy of Kernel Transfer Under Covariate Shift and Few-Shot Correction.”</span></div>
+<div class="pub"><span class="k">[R6]</span><span><b>R. A. R. Ejaz</b>, et al. “FedAdaPriv-CPU: Adaptive Differential Privacy with Frozen Backbone for Resource-Constrained Federated Medical Imaging.” Springer Nature journal.</span></div>
+<div class="pub"><span class="k">[R7]</span><span><b>R. A. R. Ejaz</b>, F. Iradat, W. Iqbal, and Y. A. Bangash. “NestAnt: A Nested-Learning Surrogate for Continual Multi-Band Microstrip Antenna Design.” <i>FIT 2026</i>.</span></div>
+<div class="pub"><span class="k">[R8]</span><span><b>R. A. R. Ejaz</b>, F. Iradat, et al. “Active-Ledger: Trust-Gated Diffusion and Behavioural Contribution Scoring for Adversarially Robust Federated ECG Arrhythmia Classification.” <i>AJCAI 2026</i>.</span></div>
+<div class="pub"><span class="k">[R9]</span><span><b>R. A. R. Ejaz</b>, F. Iradat, M. I. Kharka, and W. Iqbal. “Multi-Frequency Layer-Wise Aggregation for Federated Clinical Prediction Across Hospitals.” <i>Int. J. of E-Health and Medical Communications</i> (IGI Global).</span></div>
+<div class="pub"><span class="k">[R10]</span><span><b>R. A. R. Ejaz</b>, N. Aburaed, and F. Iradat. “Nested Learning for Multi-Timescale Electric Vehicle Charging Coordination: A Physics-Informed Deep RL Framework with Hard Voltage Guarantees.”</span></div>
+
+<h2>Honours and Selections</h2>
+<div class="row"><span>Best Paper Award, ICSL-DSGA 2026, Sunway University, Malaysia (with IIT Madras and the IEEE SMC Society), for [C1]</span><span class="r">2026</span></div>
+<div class="row"><span>Selected participant, CISPA Helmholtz Center for Information Security Summer School, Federated Learning track</span><span class="r">2026</span></div>
+<div class="row"><span>Selected participant, UK Quantum Hackathon (NQCC, University of Warwick): Rolls-Royce challenge on quantum methods for aerospace materials design</span><span class="r">2026</span></div>
+<div class="row"><span>Selected to Pakistan’s National AI Research Team at NCERT; Letter of Appreciation from its Director General</span><span class="r">2025</span></div>
+<div class="row"><span>NESCOM research funding for undergraduate research on intelligent UAV communications</span><span class="r">2024</span></div>
+
+<h2>Research Experience</h2>
+<div class="row"><span class="l">AI Researcher and Co-Investigator, Telecommunications Research Lab (TRL), IBA Karachi</span><span class="r">Jan 2025 – Present</span></div>
+<div class="sub"><span>Part-time, remote. With Dr. Faisal Iradat.</span></div>
+<ul>
+  <li>Formulated layer-wise multi-frequency synchronisation for federated learning [C5], addressing client heterogeneity, communication cost and catastrophic forgetting in one framework; extended the idea to clinical prediction across hospitals [R9] and to continual antenna design [R7].</li>
+  <li>Developed differentially private federated unlearning for right-to-erasure requests without full retraining [C6], and synthesised verified supervisory control for Byzantine-robust federated learning on mobile devices [R2].</li>
+  <li>Lead author and coordinator of an international collaboration spanning the UK, US, UAE, Pakistan, Saudi Arabia and Oman; co-supervise the lab’s undergraduate research projects (see Supervision).</li>
+</ul>
+<div class="row"><span class="l">AI Research Engineer, National Cyber Emergency Response Team (NCERT), Govt. of Pakistan</span><span class="r">Feb 2025 – Jun 2025</span></div>
+<div class="sub"><span>Islamabad, Pakistan</span></div>
+<ul>
+  <li>Led the design and build of an LLM-based security information and event management system: Kafka ingestion, quantised inference, threat classification and automated alert routing.</li>
+  <li>Automated Level-1 security operations centre triage across 200+ federal organisations at more than 25 million logs per day.</li>
+</ul>
+<div class="row"><span class="l">AI/ML Software Engineer, Electronic Media Services (EMS-UK): 6G digital twins and agentic AI</span><span class="r">Jul 2026 – Present</span></div>
+<div class="sub"><span>London, UK</span></div>
+<ul>
+  <li>Build agentic-AI components for the IoDT2 CELTIC-NEXT 6G programme, linking simulation-grounded digital twins to LLM-driven orchestration with guardrails on tool use; this work led to [R5].</li>
+  <li>Deployed a cloud-native digital-twin framework end to end on Kubernetes (Knative, RabbitMQ, PostgreSQL), with autoscaling, runbooks and operational handover.</li>
+</ul>
+
+<h2>Supervision, Teaching and Service</h2>
+<ul class="tight">
+  <li><b>Co-supervisor of undergraduate research, IBA Karachi</b> (with Dr. Faisal Iradat), 2025 – present: federated unlearning for IoT intrusion detection [C10], multi-agent digital forensics [C8], pre-encryption ransomware detection [C11], and privacy in distributed information systems (Panopticon).</li>
+  <li><b>Industry trainer, IBA Centre for Information and Communication Technology:</b> designed and delivered an Agentic AI and Intelligent Automation programme for MOL Group, 2026.</li>
+</ul>
+
+<h2>Professional Experience</h2>
+<div class="row"><span class="l">Lead AI Transformation Architect (consultant), Global Exports, Pakistan</span><span class="r">2026 – Present</span></div>
+<ul class="tight">
+  <li>Recovered 823 business rules and 65 cross-module dependencies from a legacy Oracle ERP (125 Forms modules, 434 tables, 35,064 lines of PL/SQL), verified against the live schema with zero production impact; exposed the result to LLM agents through a read-only Model Context Protocol server.</li>
+</ul>
+<div class="row"><span class="l">AI/ML Engineer (contract), Curium: AI orchestration for ports and logistics</span><span class="r">Feb 2026 – Jun 2026</span></div>
+<ul class="tight">
+  <li>Profiled and optimised the AI orchestration layer for port and logistics operations, reducing latency, throughput bottlenecks and compute cost.</li>
+</ul>
+<div class="row"><span class="l">AI Strategist and Technical Lead, AI Systems, Neura-X AI Consulting</span><span class="r">Sep 2023 – Jan 2025</span></div>
+<ul class="tight">
+  <li>Architected a self-hosted multi-agent RAG platform with hybrid retrieval (dense, sparse, re-ranking), raising end-to-end answer accuracy from 76% to 89% at under 200 ms.</li>
+  <li>Shipped ZazuAI, an on-premise meeting-intelligence system with real-time transcription under 500 ms (Whisper.cpp, DIART; 96% transcription and 80% diarisation accuracy after WhisperX post-processing).</li>
+  <li>Built thermal-imaging models for industrial monitoring (ViT, CNN and spatio-temporal GNNs; 90 to 95% accuracy), reducing the ViT patch size from 16×16 to 4×4 for low-resolution input.</li>
+</ul>
+
+<h2>Technical Skills</h2>
+<div class="kv">
+  <span class="k">Programming</span><span>Python (advanced), C++, SQL, PL/SQL, Bash, LaTeX</span>
+  <span class="k">Machine learning</span><span>PyTorch, JAX, TensorFlow, Hugging Face, PyTorch Geometric, scikit-learn, XGBoost</span>
+  <span class="k">LLMs and agents</span><span>LoRA/QLoRA fine-tuning, RAG, INT8/INT4 quantisation, agent orchestration, Model Context Protocol, evaluation and guardrails</span>
+  <span class="k">Research practice</span><span>One-command reproducible pipelines, paired bootstrap tests, differential-privacy accounting, calibration</span>
+  <span class="k">Systems</span><span>Kubernetes, Docker, Kafka, RabbitMQ, Redis, PostgreSQL, MLflow, DeepSpeed, FSDP, AWS</span>
+  <span class="k">Languages</span><span>English (full professional proficiency), Urdu (native)</span>
+</div>
+
+<h2>References</h2>
+<div class="refs">
+  <div><b>Dr. Faisal Iradat</b>Head, Telecommunications Research Lab, IBA Karachi, Pakistan.<br><i>Research supervisor and mentor</i></div>
+  <div><b>Dr. Haider Abbas</b>Director General, NCERT, Pakistan.<br><i>Employer reference (2025)</i></div>
+  <div><b>Dr. M. Waseem Iqbal</b>Assistant Professor, Sultan Qaboos University, Oman.<br><i>Research collaborator</i></div>
+</div>
+<p class="small" style="margin-top:2pt;">Contact details for referees are available on request.</p>
+
+</body>
+</html>
